@@ -5,36 +5,34 @@ from django.utils.translation import gettext_lazy as _
 from django.core import checks, exceptions, validators
 from django.db import connection, connections, router
 
-	# data_types = {
-	#     'AutoField': 'integer',
-	#     'BigAutoField': 'integer',
-	#     'BinaryField': 'BLOB',
-	#     'BooleanField': 'bool',
-	#     'CharField': 'varchar(%(max_length)s)',
-	#     'DateField': 'date',
-	#     'DateTimeField': 'datetime',
-	#     'DecimalField': 'decimal',
-	#     'DurationField': 'bigint',
-	#     'FileField': 'varchar(%(max_length)s)',
-	#     'FilePathField': 'varchar(%(max_length)s)',
-	#     'FloatField': 'real',
-	#     'IntegerField': 'integer',
-	#     'BigIntegerField': 'bigint',
-	#     'IPAddressField': 'char(15)',
-	#     'GenericIPAddressField': 'char(39)',
-	#     'JSONField': 'text',
-	#     'NullBooleanField': 'bool',
-	#     'OneToOneField': 'integer',
-	#     'PositiveBigIntegerField': 'bigint unsigned',
-	#     'PositiveIntegerField': 'integer unsigned',
-	#     'PositiveSmallIntegerField': 'smallint unsigned',
-	#     'SlugField': 'varchar(%(max_length)s)',
-	#     'SmallAutoField': 'integer',
-	#     'SmallIntegerField': 'smallint',
-	#     'TextField': 'text',
-	#     'TimeField': 'time',
-	#     'UUIDField': 'char(32)',
-	# }
+	#     'AutoField': 'integer'
+	#     'BigAutoField': 'integer'
+	#     'BinaryField': 'BLOB'
+	#     'BooleanField': 'bool'
+	#     'CharField': 'varchar(%(max_length)s)'
+	#     'DateField': 'date'
+	#     'DateTimeField': 'datetime'
+	#     'DecimalField': 'decimal'
+	#     'DurationField': 'bigint'
+	#     'FileField': 'varchar(%(max_length)s)'
+	#     'FilePathField': 'varchar(%(max_length)s)'
+	#     'FloatField': 'real'
+	#     'IntegerField': 'integer'
+	#     'BigIntegerField': 'bigint'
+	#     'IPAddressField': 'char(15)'
+	#     'GenericIPAddressField': 'char(39)'
+	#     'JSONField': 'text'
+	#     'NullBooleanField': 'bool'
+	#     'OneToOneField': 'integer'
+	#     'PositiveBigIntegerField': 'bigint unsigned'
+	#     'PositiveIntegerField': 'integer unsigned'
+	#     'PositiveSmallIntegerField': 'smallint unsigned'
+	#     'SlugField': 'varchar(%(max_length)s)'
+	#     'SmallAutoField': 'integer'
+	#     'SmallIntegerField': 'smallint'
+	#     'TextField': 'text'
+	#     'TimeField': 'time'
+	#     'UUIDField': 'char(32)'
 
 
 
