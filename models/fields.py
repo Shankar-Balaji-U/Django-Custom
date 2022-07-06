@@ -39,8 +39,6 @@ from django.db import connection, connections, router
 
 
 
-
-
 class UIDAIField(Field):
 	default_error_messages = {
 		'invalid': _('“%(value)s” is not a valid Aadhaar Number.'),
@@ -50,13 +48,11 @@ class UIDAIField(Field):
 
 	def __init__(self, verbose_name=None, **kwargs):
 		kwargs['max_length'] = 12
-		kwargs['unique'] = True
 		super().__init__(verbose_name, **kwargs)
 
 	def deconstruct(self):
 		name, path, args, kwargs = super().deconstruct()
 		del kwargs['max_length']
-		del kwargs['unique']
 		return name, path, args, kwargs
 
 	def to_python(self, value):
